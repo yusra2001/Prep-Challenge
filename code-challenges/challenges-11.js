@@ -18,23 +18,15 @@
 
 function square(arr) {
     // write your code here
-    let ret = [];            
 
-    for (var i = 0, len = arr.length; i < len; i++) {
-        root = Math.sqrt(arr[i]);
-        ret.push(root);
-    }
+    /////////////////
 
-    return ret;
-    // /////
-    // ret= [];
+    arr = arr.map((ele, i) => {
+        return ele * ele;
+    })
+    return arr;
 
-    // for (var i = 0, len = arr.length; i < len; i++) {
-    //     ret.push(arr[i] * arr[i]);
-    // }
-
-    // return ret;
-    // ////////////
+    /////////////////////////////////////
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -74,24 +66,13 @@ function square(arr) {
 
 function fullName(arr) {
     // write your code here
-    //const createListOfObjects = () => {
-        // let names = ['Cameron Betts', 'Shana Lopez', 'Angela Li'];
-        let deck = [];
-      
-        for (var i=0; i < arr.length; i++){
-          const fullName = arr[i];
-          const nameArray = arr[i].split(' ');
-          const fName = nameArray[0];
-          const lName = nameArray[1];
-          for (var k=0; k < arr.length; k++){
-            deck.push({ fName, lName });
-          }
-        }
-        return deck;
-      }
-      
-      console.log(fullName());
-
+    //////////////////////
+    arr = arr.map((ele, i) => {
+        return ele.firstName + ' ' + ele.lastName;
+    })
+    return arr;
+    //////////////////////////////
+}
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
