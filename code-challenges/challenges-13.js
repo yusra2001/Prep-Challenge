@@ -63,7 +63,6 @@ const objectCounter = (obj) => {
 
 const stringReverse = (str) => {
     // write your code here
-    
     let result = str.split(" ");
     let reversed = result.reduce((val, ele) => {
         val.unshift(ele);
