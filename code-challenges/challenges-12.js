@@ -18,16 +18,28 @@
 // 
 
 const oddFiltration = (arr) => {
-    const odds = [];
+    
+    /////////////////
+    
+    
+     arr  = arr.filter((ele,i)=>{
+        return  ele % 2 != 0;
+        })
+      return arr;
+}
 
-arr.forEach(number => {
-  if (number % 2 !== 0) {
-    odds.push(number);
-  }
-});
 
-console.log(odds);
-return odds;
+
+//     const odds = [];
+
+// arr.forEach(number => {
+//   if (number % 2 !== 0) {
+//     odds.push(number);
+//   }
+// });
+
+// console.log(odds);
+// return odds;
 // //     // 
 // const odds = arr.filter(number => {
 //     return number % 2 !== 0;
