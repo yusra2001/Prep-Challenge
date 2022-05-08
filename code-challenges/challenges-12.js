@@ -18,52 +18,9 @@
 // 
 
 const oddFiltration = (arr) => {
-    
-    /////////////////
-    
-    
-     arr  = arr.filter((ele,i)=>{
-        return  ele % 2 != 0;
-        })
-      return arr;
-}
-
-
-
-//     const odds = [];
-
-// arr.forEach(number => {
-//   if (number % 2 !== 0) {
-//     odds.push(number);
-//   }
-// });
-
-// console.log(odds);
-// return odds;
-// //     // 
-// const odds = arr.filter(number => {
-//     return number % 2 !== 0;
-//   });
-  
-//   console.log(odds);
-//     function numbers(l, r) {
-//         // l and r are any given numbers
-//         var x=[];
-//         var i=l;
-//         while(x.push(i++)<r){};
-//         return x;        
-//       }
-  ///////
-//   let newar = [];
-//     for (var y =0; y < arr.length ;y++){
-//         if (num %2!=0)
-//             newar.push(num)
-//     }
-//   console.log(numbers(10, 19));
-// let odds = arr.filter(n => n%2)
-
-// console.log(odds)
     // write your code here
+    
+    return arr.filter(item => !(item % 2 === 0) ? item : false);
     
 }
 // -------------------------------------------------------------------------------------------------------
@@ -117,7 +74,24 @@ const oddFiltration = (arr) => {
 
 const cvsFiltration = (arr) => {
     // write your code here
+    /////////////////////////////
+
+    let tempResult = arr.filter(item => {
+        if (item.yearsOfExperience > 4 && item.tech === 'JS') {
+     if (item.LastName === null) {
+     return false;
+         }
+         else {
+      return true;
+         }
+        }
+    });
+    return tempResult.map(item => {
+     return { fullName: `${item.firstName} ${item.LastName}`, tech: `${item.tech}` };
+    });
 }
+///////
+//}
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
